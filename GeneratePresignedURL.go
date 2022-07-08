@@ -28,8 +28,8 @@ func GetPresignedURL(sess *session.Session, bucket, key *string) (string, error)
 
 func main() {
 
-	bucket := flag.String("b", "testbucket5u3920", "The bucket")
-	key := flag.String("k", "audio.mp3", "The object key")
+	bucket := flag.String("b", "<bucket-name>", "The bucket")
+	key := flag.String("k", "<object-key>", "The object key")
 	flag.Parse()
 
 	if *bucket == "" || *key == "" {
